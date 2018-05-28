@@ -1,0 +1,30 @@
+<nz-spin [nzSpinning]="_isSpinning">
+  <div class="bannerBg_news">
+  </div>
+  <div class="mainBox topmain">
+    <div class="crumbs">
+      <div class="crum">
+        新闻资讯
+        <div class="right">
+          当前位置：<span>新闻资讯</span>
+        </div>
+      </div>
+      <p>News <span>information</span></p>
+    </div>
+    <ul class="newsList clearfix">
+      <li *ngFor="let item of newsArr">
+        <div class="dateBox">
+          <p class="date">{{item.updatetime | date: 'dd'}}</p>
+          <p class="year">{{item.updatetime | date: 'yyyy-MM'}}</p>
+        </div>
+        <div class="rightBox">
+          <h3>{{item['title']}}</h3>
+          <p>{{item['description']}}</p>
+          <a class="more" [routerLink]="['/layout/detail',{id:item['id'],ifs:'0'}]">查看详情</a>
+        </div>
+      </li>
+    </ul>
+    <nz-pagination style="float: right" [nzPageSize]="6" nzShowTotal [(nzPageIndex)]="pageindex" (nzPageIndexChange)="getNews()" [nzTotal]="nztotal" nzShowQuickJumper ></nz-pagination>
+  </div>
+  <nz-back-top></nz-back-top>
+</nz-spin>

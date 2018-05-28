@@ -1,0 +1,166 @@
+.bannerBg_service {
+  background: url(../../assets/images/ban4.jpg) no-repeat center;
+  height: 400px;
+}
+.topmain{
+  position: relative;
+  top:-50px;
+  background: #fff;
+  padding: 40px 20px;
+}
+ul.caseList{
+  margin: 60px 0;
+  display: flex;
+}
+ul.caseList li{
+  width: 240px;
+  height: 250px;
+  overflow: hidden;
+  margin-right: 88px;
+  text-align: center;
+}
+ul.caseList li:last-child{
+  margin-right: 0;
+}
+ul.caseList li code{
+  display: block;
+  width: 136px;
+  height: 136px;
+  border-radius:100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding-top: 34px;
+}
+ul.caseList li code i{
+  font-size: 58px;
+  color: #fff;
+  text-align: center;
+
+}
+
+ul.caseList li span{
+  display: inline-block;
+  width: 240px;
+  font-size: 18px;
+  color: #111111;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+ul.caseList li p{
+  display: block;
+  width: 240px;
+  height: 44px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #4e4e4e;
+  overflow: hidden;
+}
+ul.caseList li.fu1 code{
+  background: #2e80e2;
+}
+ul.caseList li.fu2 code{
+  background: #e84d4f;
+}
+ul.caseList li.fu3 code{
+  background: #2fc27e;
+}
+ul.caseList li.fu4 code{
+  background: #f68532;
+}
+.indextitle {
+  background: url(../../assets/images/index1.jpg) no-repeat;
+  width: 252px;
+  height: 62px;
+  margin: 0 auto;
+}
+.timelineBox{
+  margin-top: 60px;
+}
+.bgBox{
+  width: 852px;
+  height: 756px;
+  margin: 0 auto;
+  background: url(../../assets/images/cur11.jpg) repeat-y top center;
+  overflow: hidden;
+}
+.bgBox .bgList{
+  width: 852px;
+  height: 212px;
+  position: relative;
+  margin: 30px auto;
+}
+.bgBox .imgTip{
+  width: 427px;
+  height: 212px;
+  position: relative;
+  background: url(../../assets/images/cur15.jpg) no-repeat;
+  background-position: center right;
+}
+
+.bgBox .imgTip .imgs{
+  width: 365px;
+  height: 212px;
+}
+.bgBox .imgTip .cur{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right:-17px;
+  top:90px;
+}
+.bgBox .txtTip{
+  width: 278px;
+  height: 150px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.bgBox .txtTip span{
+  font-size: 20px;
+  color: #111111;
+  display: block;
+  margin-bottom: 10px;
+}
+.bgBox .bgLeft .txtTip p{
+  font-size: 14px;
+  color: #111111;
+  line-height: 22px;
+}
+.timelineBox a.more{
+  display: block;
+  padding: 4px 0px;
+  background: #1ba3df;
+  color: #fff;
+  border-radius: 20px;
+  margin: 0 auto;
+  width: 45px;
+  text-align: center;
+}
+.bgBox .bgList:nth-child(odd) .imgTip{
+  float: left;
+}
+.bgBox .bgList:nth-child(odd) .txtTip{
+  float: left;
+  margin-left: 60px;
+}
+.bgBox .bgList:nth-child(even) .imgTip{
+  float: right;
+  background-position: center left;
+}
+.bgBox .bgList:nth-child(even) .imgTip .imgs{
+  float: right;
+}
+.bgBox .bgList:nth-child(even) .imgTip .cur{
+  left: -16px;
+}
+.bgBox .bgList:nth-child(even) .txtTip{
+  float: left;
+}
+.open{
+  height: auto;
+}
+.close{
+  height: 756px;
+}

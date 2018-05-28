@@ -1,0 +1,47 @@
+<nz-spin [nzSpinning]="_isSpinning">
+  <div class="bannerBg_join">
+  </div>
+  <div class="mainBox">
+    <div class="office clearfix">
+      <div class="lt">
+        <span class="titles">公司环境</span>
+        <p>{{joinArr['even']}}</p>
+      </div>
+      <div class="rt">
+        <div class="imgBox" [ngStyle]="{'background-image':'url('+joinimgbArr['path']+')'}">
+          <div class="nameBox">
+            办公区域
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="office2 clearfix">
+      <div class="lt">
+        <div class="imgBox" [ngStyle]="{'background-image':'url('+joinimgaArr['path']+')'}">
+          <div class="nameBox">
+            休闲阅览室
+          </div>
+        </div>
+      </div>
+      <div class="rt">
+        <div class="imgBox" [ngStyle]="{'background-image':'url('+joinimgcArr['path']+')'}">
+          <div class="nameBox">
+            温馨会议室
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="joinBox">
+      <div class="jo"></div>
+      <div class="jos">
+        <nz-collapseset nzAccordion [nzBordered]="false" >
+          <nz-collapse *ngFor="let panel of jobArr;let i = index" [nzTitle]="panel['title']" [nzActive]="ifactive(i) ">
+            <p>{{panel['description']}}</p>
+            <a href="tencent://message/?uin=609129392&Site=&menu=yes" class="btn">在线应聘</a>
+          </nz-collapse>
+        </nz-collapseset>
+      </div>
+    </div>
+  </div>
+  <nz-back-top></nz-back-top>
+</nz-spin>

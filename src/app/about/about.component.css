@@ -1,0 +1,346 @@
+
+.bannerBg_about {
+  background: url(../../assets/images/ban2.jpg) no-repeat center;
+  height: 400px;
+}
+
+.who {
+  position: relative;
+}
+
+.who .lt {
+  width: 557px;
+  height: 400px;
+  background: url(../../assets/images/cur3.jpg) repeat;
+  padding: 100px 0 0 40px;
+}
+
+.who .lt h1 {
+  font-size: 60px;
+  color: #cacaca;
+}
+
+.who .lt span {
+  display: inline-block;
+  font-size: 20px;
+  color: #2d2d2d;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #c7c7c7;
+  margin-bottom: 10px;
+}
+
+.who .lt p {
+  font-size: 20px;
+  color: #4f4f4f;
+}
+
+.who .lt ul.whoul {
+  margin-top: 20px;
+}
+
+ul.whoul li {
+  background: url(../../assets/images/cur4.png) no-repeat;
+  width: 55px;
+  height: 58px;
+  text-align: center;
+  font-size: 14px;
+  color: #5c5c5c;
+  padding-top: 9px;
+  margin-right: 10px;
+  float: left;
+}
+
+.who .rt {
+  width: 644px;
+  height: 324px;
+  background: #fff;
+  position: absolute;
+  right: 0;
+  top: -50px;
+  padding: 120px 0 0 46px;
+}
+
+.who .rt p {
+  font-size: 14px;
+  color: #767676;
+  display: block;
+  width: 598px;
+  height: 165px;
+  overflow: hidden;
+  line-height: 24px;
+}
+
+.teamBox .teamtop {
+  height: 279px;
+  overflow: hidden;
+}
+
+.teamBox .teamtop img,
+.teamBox .teambot img {
+  float: left;
+}
+
+.teamBox .teamtop .fox {
+  float: left;
+  width: 300px;
+  height: 279px;
+  background: #b83122;
+  position: relative;
+  padding: 124px 0 0 33px;
+}
+
+.teamBox .teamtop .fox i {
+  position: absolute;
+  top: 29px;
+  right: 21px;
+  font-size: 68px;
+  color: #d89992;
+}
+
+.teamBox .teamtop .fox span {
+  font-size: 26px;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.teamBox .teamtop .fox p {
+  font-size: 21px;
+  color: #fff;
+}
+
+.teamBox .teambot {
+  height: 233px;
+  overflow: hidden;
+}
+
+.teamBox .teambot .imgs {
+  float: left;
+  position: relative;
+}
+
+.teamBox .teambot .imgs .bg {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+}
+
+.teamBox .teambot .imgs img {
+  opacity: .8;
+}
+
+.teamBox .teambot .imgs .bg p {
+  display: block;
+  width: 240px;
+  height: 98px;
+  overflow: hidden;
+  position: absolute;
+  font-size: 16px;
+  color: #fff;
+  top: 52px;
+  left: 30px;
+  line-height: 24px;
+}
+
+.certificate {
+  margin-top: 20px;
+  background: url(../../assets/images/cur3.jpg) repeat;
+  padding: 30px 0;
+}
+
+.certificate .title {
+  margin-left: 17px;
+}
+
+.certificate .title span,
+.who .rt span,
+.contactMap span.tit {
+  font-size: 24px;
+  color: #b83122;
+  border-bottom: 2px solid #b83122;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.certificate .title p {
+  font-size: 14px;
+  color: #767676;
+  margin-bottom: 20px;
+}
+
+.certificate .cerUl {
+  width: 1166px;
+  margin: 0 auto;
+}
+
+.certificate .cerUl li {
+  width: 140px;
+  float: left;
+  margin-right: 8px;
+}
+
+.certificate .cerUl li img {
+  width: 100%;
+  height: 198px;
+  border: 1px solid #f3f3f5;
+}
+
+.certificate .cerUl li:hover img {
+  border: 1px solid #eb7373;
+}
+
+.contactMap {
+  background: url(../../assets/images/cur3.jpg) repeat;
+  padding: 30px 0;
+  padding-bottom: 100px;
+}
+
+.contactMap span.tit {
+  margin-left: 17px;
+}
+
+.contactMap ul.contactUl {
+  width: 1104px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+ul.contactUl li {
+  float: left;
+  width: 341px;
+  height: 222px;
+  position: relative;
+  text-align: center;
+  padding-top: 25px;
+  margin-right: 40px;
+}
+
+ul.contactUl li:last-child {
+  margin-right: 0;
+}
+
+ul.contactUl li code {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 62px;
+  height: 62px;
+  border-radius: 100%;
+  background: #b4b4b4;
+}
+
+ul.contactUl li code i {
+  display: block;
+  color: #fff;
+  font-size: 34px;
+  padding-top: 6px;
+}
+
+ul.contactUl li span {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 18px;
+  color: #414141;
+}
+
+ul.contactUl li p {
+  color: #414141;
+  font-size: 14px;
+  width: 341px;
+  height:21px;
+  overflow: hidden;
+}
+
+ul.contactUl li:hover {
+  background: #427cbf;
+  border-radius: 40px;
+}
+
+ul.contactUl li:hover .ico {
+  display: none;
+  background: url(../../assets/images/cur5.png) no-repeat;
+  width: 46px;
+  height: 21px;
+  position: absolute;
+  left: 47px;
+  bottom: -21px;
+}
+
+ul.contactUl li:hover .ico {
+  display: block;
+}
+
+ul.contactUl li:hover code {
+  background: #fff;
+  transform: translateY(5px);
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+
+ul.contactUl li:hover code i {
+  color: #bd250b;
+}
+
+ul.contactUl li:hover p,
+ul.contactUl li:hover span {
+  color: #fff;
+}
+.mapBox{
+  width: 100%;
+  height: 526px;
+  overflow: hidden;
+  background: #eee;
+}
+.adressBox{
+  margin: 30px 0;
+}
+.adressBox ul{
+  width: 1400px;
+}
+.adressBox li{
+  float: left;
+  width: 318px;
+  margin: 40px 90px 0 0px;
+}
+
+.bus dt {
+  margin-left: -50px;
+}
+.adressBox li dt {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.adressBox li dd {
+  font-size: 16px;
+  color: #333;
+  line-height: 32px;
+}
+.adressBox li dt i{
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50PX;
+  margin-right: 6px;
+}
+dl.bus dt i{
+  background: #31a0e1;
+}
+dl.bus dt{
+  color: #31a0e1;
+}
+dl.taxi dt i{
+  background: #de6764;
+}
+dl.taxi dt{
+  color: #de6764;
+}
+dl.metro dt i{
+  background: #9ac047;
+}
+dl.metro dt{
+  color: #9ac047;
+}

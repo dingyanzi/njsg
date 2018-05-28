@@ -1,0 +1,153 @@
+<nz-spin [nzSpinning]="_isSpinning">
+  <div class="bannerBg_about">
+  </div>
+  <div class="mainBox">
+    <div class="who clearfix">
+      <div class="lt">
+        <h1>Who we are?</h1>
+        <span>我们是谁？</span>
+        <p>诚信为本 务实创新</p>
+        <ul class="whoul">
+          <li>技术<br />雄厚</li>
+          <li>敬业<br />奉献</li>
+          <li>客户<br />至上</li>
+          <li>团结<br />合作</li>
+        </ul>
+      </div>
+      <div class="rt">
+        <span>关于我们</span>
+        <p>
+          {{aboutArr['description']}}
+        </p>
+      </div>
+    </div>
+    <div class="teamBox">
+      <div class="teamtop">
+        <img [src]="aboutImg['path']" alt="" width="299" height="279" />
+        <div class="fox">
+          <!--<i class="anticon anticon-usergroup-add"></i>-->
+          <i class="iconfont icon-tuandui"></i>
+          <span>我们的团队</span>
+          <p>先进的技术+远瞻的眼光</p>
+        </div>
+        <img [src]="aboutImgc['path']" alt="" width="600" height="279" />
+      </div>
+      <div class="teambot">
+        <div class="imgs">
+          <img [src]="aboutImgb['path']" alt="" width="299" height="233" />
+          <div class="bg">
+            <p>互联网行业瞬息万变<br />谁能洞察未来<br />谁就能引领行业发展</p>
+          </div>
+        </div>
+        <img [src]="aboutImga['path']" alt="" width="300" height="233" />
+        <div class="imgs">
+          <img [src]="aboutImgd['path']" alt="" width="300" height="233" />
+          <div class="bg">
+            <p>松果团队是一个富有理想和激情的团队，也是一个技术专业化、管理人性化、创新性和学习型的优秀团队。</p>
+          </div>
+        </div>
+        <img [src]="aboutImge['path']" alt="" width="300" height="233" />
+      </div>
+    </div>
+    <div class="certificate">
+      <div class="title">
+        <span>企业资质</span>
+        <p>服务创造价值，为客户提供最优的互联网整体解决方案</p>
+      </div>
+      <ul class="cerUl clearfix">
+        <li><img src="./assets/images/ce1.jpg" alt="" /></li>
+        <li><img src="./assets/images/ce2.jpg" alt="" /></li>
+        <li><img src="./assets/images/ce3.jpg" alt="" /></li>
+        <li style="width: 270px;"><img src="./assets/images/ce4.jpg" alt="" /></li>
+        <li><img src="./assets/images/ce5.jpg" alt="" /></li>
+        <li><img src="./assets/images/ce6.jpg" alt="" /></li>
+        <li><img src="./assets/images/ce7.jpg" alt="" /></li>
+      </ul>
+    </div>
+    <div class="contactMap">
+      <span class="tit">联系我们</span>
+      <ul class="contactUl clearfix">
+        <li>
+          <code><i class="iconfont icon-dizhi"></i></code>
+          <span>公司地址</span>
+          <p style="height: 42px;overflow: hidden">{{aboutArr['address']}}</p>
+          <b class="ico"></b>
+        </li>
+        <li>
+          <code><i class="iconfont icon-dianhua"></i></code>
+          <span>联系方式</span>
+          <p>联系电话：{{aboutArr['contact']}} </p>
+          <p>传真：{{aboutArr['fax']}}</p>
+          <b class="ico"></b>
+        </li>
+        <li>
+          <code><i class="iconfont icon-youxiang"></i></code>
+          <span>公司邮箱</span>
+          <p>{{aboutArr['email']}}</p>
+          <b class="ico"></b>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="mapBox">
+    <baidu-map [options]="opts">
+      <control type="navigation" [options]="controlOpts"></control>
+      <control type="overviewmap" [options]="overviewmapOpts"></control>
+      <control type="scale" [options]="scaleOpts"></control>
+      <control type="maptype" [options]="mapTypeOpts"></control>
+      <marker *ngFor="let marker of markers" [point]="marker.point" [options]="marker.options" (clicked)="showWindow($event)"></marker>
+    </baidu-map>
+  </div>
+  <div class="adressBox clearfix">
+    <div class="mainBox">
+      <ul class="clearfix">
+        <li>
+          <dl class="bus">
+            <dt>
+              <i class="iconfont icon-swticongongjiaoche"></i>
+              公交车
+            </dt>
+            <dd>
+              <p class="text">
+                站台：天润城公交总站
+                <br>
+                线路：656路，533路，691路，487路，555路，606路
+              </p>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <dl class="taxi">
+            <dt>
+              <i class="iconfont icon-swticongongjiaoche"></i>
+              出租车/自驾
+            </dt>
+            <dd>
+              <p class="text">
+                站台：天润城公交总站
+                <br>
+                线路：656路，533路，691路，487路，555路，606路
+              </p>
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <dl class="metro">
+            <dt>
+              <i class="iconfont icon-swticongongjiaoche"></i>
+              地铁
+            </dt>
+            <dd>
+              <p class="text">
+                站台：天润城公交总站
+                <br>
+                线路：656路，533路，691路，487路，555路，606路
+              </p>
+            </dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nz-back-top></nz-back-top>
+</nz-spin>

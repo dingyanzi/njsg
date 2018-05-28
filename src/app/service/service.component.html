@@ -1,0 +1,57 @@
+<nz-spin [nzSpinning]="_isSpinning">
+  <div class="bannerBg_service">
+  </div>
+  <div class="mainBox topmain">
+    <div class="crumbs">
+      <div class="crum">
+        服务范围
+        <div class="right">
+          当前位置：<span>服务范围</span>
+        </div>
+      </div>
+      <p>SERVICE <span>ITEMS</span></p>
+    </div>
+    <ul class="caseList clearfix">
+      <li class="fu1">
+        <code><i class="iconfont icon-guanligudong"></i></code>
+        <span>新型社管理解决方案</span>
+        <p>有效整合资源，优化社会管理力量提升综合管理水平</p>
+      </li>
+      <li class="fu2">
+        <code><i class="iconfont icon-UAV"></i></code>
+        <span>无人机解决方案</span>
+        <p>高效、便捷、打造新型无人机应用解决方案</p>
+      </li>
+      <li class="fu3">
+        <code><i class="iconfont icon-daimamoshi"></i></code>
+        <span>提供专业软件解决方案</span>
+        <p>创新、有效 专业优质的软件解决方案</p>
+      </li>
+      <li class="fu4">
+        <code><i class="iconfont icon-icon--"></i></code>
+        <span>手机APP解决方案</span>
+        <p>IOS、安卓交互应用UI设计</p>
+      </li>
+    </ul>
+    <div class="indextitle"></div>
+    <div class="timelineBox">
+      <div class="bgBox" [ngClass]="{'open': shows == true,'close': shows == false}">
+        <div class="bgList" *ngFor="let item of serviceArr">
+          <div class="imgTip">
+            <img class="imgs" [src]="item['path']">
+            <img class="cur" src="./assets/images/cur12.png">
+          </div>
+          <div class="txtTip">
+            <span>{{item['title']}} </span>
+            <p>{{item['description']}}</p>
+          </div>
+        </div>
+
+      </div>
+      <a class="more" *ngIf = "yes == true" (click)="openFn()">更多</a>
+      <a class="more" *ngIf = "yes == false" (click)="closeFn()">收起</a>
+    </div>
+  </div>
+  <nz-back-top></nz-back-top>
+</nz-spin>
+

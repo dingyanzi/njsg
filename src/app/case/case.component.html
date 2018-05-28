@@ -1,0 +1,30 @@
+<nz-spin [nzSpinning]="_isSpinning">
+  <div class="bannerBg_case">
+  </div>
+  <div class="mainBox topmain">
+    <div class="crumbs">
+      <div class="crum">
+        成功案例
+        <div class="right">
+          当前位置：<span>成功案例</span>
+        </div>
+      </div>
+      <p>Success <span>case</span></p>
+    </div>
+    <ul class="caseList clearfix">
+      <li  *ngFor="let item of caseArr">
+        <a class="imgbox" [routerLink]="['/layout/detail',{id:item['id'],ifs:'1'}]" [ngStyle]="{'background-image':'url('+item.path+')'}">
+          <div class="graybg"></div>
+        </a>
+        <div class="namebox">
+          <span>{{item['title']}}</span>
+          <p>{{item['description']}}</p>
+          <i [ngClass]="{'types': item.type == '0', 'first': item.type == '2'}" class="iconfont icon-shouji"></i>
+          <i [ngClass]="{'types': item.type == '0', 'first': item.type == '1'}" class="iconfont icon-diannao"></i>
+        </div>
+      </li>
+    </ul>
+    <nz-pagination style="float: right" [nzPageSize]="6" nzShowTotal [(nzPageIndex)]="pageindex" (nzPageIndexChange)="getCase()" [nzTotal]="nztotal" nzShowQuickJumper ></nz-pagination>
+  </div>
+  <nz-back-top></nz-back-top>
+</nz-spin>

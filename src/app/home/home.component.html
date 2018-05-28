@@ -1,0 +1,94 @@
+<nz-spin [nzSpinning]="_isSpinning">
+  <div class="bannerBox">
+  <nz-carousel nzAutoPlay>
+      <div nz-carousel-content *ngFor="let item of bannerArr">
+        <a (click)="toChange(item)" class="imgLink" [ngStyle]="{'background-image':'url('+item['path']+')'}"></a>
+      </div>
+  </nz-carousel>
+  </div>
+  <div class="indexService">
+    <div class="mainBox clearfix">
+      <div class="indextitle"></div>
+      <ul class="indexfu clearfix ">
+        <li  *ngFor="let item of serviceArr">
+          <figure class="effect-lily">
+            <div class="bg"></div>
+            <a style=" background-size: cover; background-position: center center;" routerLink="/layout/service" [ngStyle]="{'background-image':'url('+item['path']+')'}">
+              <figcaption>
+                <div>
+                  <h2>{{item['title']}}</h2>
+                  <p>{{item['description']}}</p>
+                </div>
+              </figcaption>
+            </a>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="indextitle tit2"></div>
+  <div class="indexcase">
+    <div class="widthBox">
+      <ul class="ceseList clearfix" [ngStyle]="{'top':move+'px'}">
+        <li  *ngFor="let item of caseArr;" [ngStyle]="{'background-image':'url('+item['path']+')'}">
+          <div class="bot">
+            <span>{{item['title']}}</span>
+            <p>{{item['description']}}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="caseBtn">
+      <div class="mainBox">
+        <div class="lt">
+          <a (click)="left()" class="prev"><img src="./assets/images/arrow594.svg"></a>
+          <a (click)="right()" class="next"><img src="./assets/images/arrow594.svg"></a>
+        </div>
+        <div class="rt">
+          <a href="tencent://message/?uin=609129392&Site=&menu=yes">我也需要这样的产品</a>
+          <a class="more" routerLink="/layout/case">+更多案例</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="indextitle tit3"></div>
+  <div class="indexNew clearfix">
+    <div class="mainBox">
+      <ul class="indexnews clearfix">
+        <li *ngFor="let item of newsArr">
+          <div class="time">
+            <span class="date">{{item.updatetime | date: 'dd'}}</span>
+            <span class="year">{{item.updatetime | date: 'yyyy-MM'}}</span>
+          </div>
+          <div class="txt">
+            <a [routerLink]="['/layout/detail',{id:item['id'],ifs:'0'}]">{{item['title']}}</a>
+            <p>{{item['description']}}</p>
+          </div>
+          <code></code>
+        </li>
+      </ul>
+      <a class="more" routerLink="/layout/news">+查看更多</a>
+    </div>
+  </div>
+  <div class="indexAbout clearfix">
+    <div class="mainBox">
+      <div class="indextitle tit4"></div>
+      <div class="lt">
+        <h1><i class="lef"></i>我们是一家面向政府和部队提供IT解决方案与<br>服务的专业软件企业，是政府信息化专业提供商<i class="ref"></i></h1>
+        <dl class="intro clearfix">
+          <dt>核心价值：</dt>
+          <dd>诚信为本，务实创新</dd>
+          <dt>专业团队：</dt>
+          <dd>先进的技术+远瞻的眼光，我们是一个富有理想和激情的团队，也是一个技术专业化、管理人性化、创新性和学习型的优秀团队。</dd>
+        </dl>
+        <p class="inbot">专业是我们的优势，精品是我们的目标，选择品质，选择松果
+        </p>
+        <a class="more" routerLink="/layout/about">+查看更多</a>
+      </div>
+      <div class="rt">
+        <img src="./assets/images/index6.jpg">
+      </div>
+    </div>
+  </div>
+  <nz-back-top></nz-back-top>
+</nz-spin>

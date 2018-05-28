@@ -1,0 +1,66 @@
+body,html{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bannerBg_news {
+  background: url(../../assets/images/ban7.jpg) no-repeat center;
+  height: 400px;
+}
+.bannerBg_case {
+  background: url(../../assets/images/ban3.jpg) no-repeat center;
+  height: 400px;
+}
+.topmain{
+  position: relative;
+  top:-50px;
+  background: #fff;
+  padding: 40px 20px;
+}
+.showBox{
+  margin-top: 30px;
+}
+.showBox .tipBox{
+  text-align: center;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.showBox .tipBox h4{
+  font-size: 30px;
+  color: #525252;
+  margin-bottom: 10px;
+}
+.showBox .tipBox span{
+  font-size: 14px;
+  color: #8d8d8d;
+}
+.showBox .showtxt{
+  padding: 0 20px;
+}
+.showBox .showtxt,.showBox .showtxt p{
+  font-size: 14px;
+  line-height: 24px;
+  color: #555;
+}
+.showBox .showtxt img{
+  width: 100% !important;
+}
+.pages{
+  margin-top: 20px;
+  width: 1160px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.pages p a{
+   font-size: 14px;
+   color: #8d8d8d;
+   margin-bottom: 10px;
+}
+.pages p a:hover{
+  color: #555;
+}
+.pages p span{
+  color: #555;
+}

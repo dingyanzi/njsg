@@ -1,0 +1,87 @@
+.bannerBg_join{
+  background: url(../../assets/images/ban5.jpg) no-repeat center;
+  height: 400px;
+}
+.topmain{
+  position: relative;
+  top:-50px;
+  background: #fff;
+  padding: 40px 20px;
+}
+.office{
+  margin-bottom: 20px;
+}
+.office .lt{
+  width: 382px;
+  height: 461px;
+  margin-top: -50px;
+  background: url(../../assets/images/cur3.jpg) repeat;
+  padding: 100px 50px 50px 50px;
+  overflow: hidden;
+}
+.office .rt{
+  width: 818px;
+  height:411px;
+}
+.titles{
+  font-size: 24px;
+  color: #101010;
+  border-bottom: 2px solid #b83122;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.office .lt p{
+  font-size: 14px;
+  color: #363636;
+  margin-top: 20px;
+}
+.office .rt .imgBox{
+  width: 818px;
+  height:411px;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.office .rt .imgBox .nameBox,.office2 .imgBox .nameBox{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height:97px;
+  line-height: 97px;
+  padding: 0 27px;
+  overflow: hidden;
+  font-size: 16px;
+  color: #fff;
+  background: url(../../assets/images/cur6.png) repeat-x;
+}
+.office2 .imgBox{
+  width: 592px;
+  height:410px;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.joinBox{
+  margin: 30px 0;
+}
+.joinBox .jo{
+  background: url(../../assets/images/joinbg.jpg) no-repeat;
+  width: 1200px;
+  height: 164px;
+}
+.joinBox .jos p.gang{
+  margin-bottom: 10px;
+}
+.jos .btn{
+  display: block;
+  padding: 5px 0;
+  width: 100px;
+  border: 1px solid #cbcaca;
+  color: #666;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 20px;
+}

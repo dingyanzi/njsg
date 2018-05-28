@@ -1,0 +1,494 @@
+
+.bannerBox img {
+  width: 100%;
+}
+.bannerBox .imgLink{
+  display: block;
+  min-height: 560px;
+  overflow: hidden;
+  background: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*服务范围*/
+
+.indexService {
+  margin: 60px 0 100px 0;
+}
+
+.indextitle {
+  background: url(../../assets/images/index1.jpg) no-repeat;
+  width: 252px;
+  height: 62px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.indextitle.tit2 {
+  background-position: 0 -96px;
+}
+
+.indextitle.tit3 {
+  width: 331px;
+  background-position: 0 -200px;
+}
+
+.indextitle.tit4 {
+  background-position: 0 -302px;
+}
+
+ul.indexfu {
+  width: 1257px;
+  height: 320px;
+  overflow: hidden;
+}
+
+ul.indexfu li {
+  width: 270px;
+  height: 320px;
+  float: left;
+  margin-right: 34px;
+  overflow: hidden;
+  background: #000;
+}
+
+ul.indexfu li figure {
+  color: #fff;
+  position: relative;
+  width: 100%;
+  height: 321px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul.indexfu li figure a{
+  width: 270px;
+  height:321px;
+  display: block;
+  background: no-repeat;
+}
+ul.indexfu li:hover figure {
+  background: #000;
+}
+
+ul.indexfu li figure.effect-lily figcaption>div h2 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+ul.indexfu li figure.effect-lily figcaption>div p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+ul.indexfu li figure.effect-lily figcaption>div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+}
+
+ul.indexfu li figure figcaption::before,
+ul.indexfu li figure figcaption::after {
+  pointer-events: none;
+}
+
+ul.indexfu li figure figcaption,
+ul.indexfu li figure figcaption>a {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+ul.indexfu li figure a {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 100%;
+}
+ul.indexfu li .effect-lily .bg{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+ul.indexfu li .effect-lily:hover .bg {
+  background:rgba(0, 0, 0, 0.5);
+  filter: alpha(opacity=60)
+}
+
+ul.indexfu li .effect-lily:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100)
+}
+
+ul.indexfu li figure.effect-lily:hover img,
+ul.indexfu li figure.effect-lily:hover h2,
+ul.indexfu li figure.effect-lily:hover p {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+ul.indexfu li figure.effect-lily:hover p {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+}
+
+ul.indexfu li figure.effect-lily h2,
+ul.indexfu li figure.effect-lily p {
+  -webkit-transform: translate3d(0, 40px, 0);
+  transform: translate3d(0, 40px, 0);
+}
+
+ul.indexfu li figure.effect-lily h2 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+ul.indexfu li figure.effect-lily p {
+  opacity: 0;
+  filter: alpha(opacity=0) ;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+  transition: opacity 0.2s, transform 0.35s;
+  height: 120px;
+  overflow: hidden;
+}
+
+
+/*服务范围*/
+
+
+/*成功案例*/
+.indexcase{
+  margin-bottom: 60px;
+}
+.widthBox{
+  height:350px;
+  overflow: hidden;
+}
+.indexcase ul.ceseList {
+  position: relative;
+  top:0;
+  width: 100%;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+
+.indexcase ul.ceseList li {
+  position: relative;
+  float: left;
+  width: 33.3%;
+  height: 350px;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.indexcase ul.ceseList li .bot {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 97px;
+  background: url(../../assets/images/cur6.png) repeat-x;
+  padding: 5% 10% 5% 10%;
+}
+
+.indexcase ul.ceseList li .bot span {
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.indexcase ul.ceseList li .bot p {
+  font-size: 14px;
+  color: #ffffff;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.indexcase .caseBtn {
+  margin-top: 30px;
+  height: 100px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.indexcase .caseBtn .lt a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.indexcase .caseBtn .lt a img {
+  display: block;
+  width: 30px;
+  height: 30px
+}
+
+.indexcase .caseBtn .lt a.next img {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+
+.indexcase .caseBtn .lt a i {
+  font-size: 30px;
+  color: #333;
+}
+
+.indexcase .caseBtn .lt a:last-child i {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+
+.indexcase .caseBtn .rt a {
+  font-size: 16px;
+  display: inline-block;
+  padding: 18px 30px;
+  color: #3f3f3f;
+  border: 1px solid #d2d2d2;
+  margin-left: 10px;
+}
+
+.indexcase .caseBtn .rt a.more {
+  background: #ba0901;
+  color: #fff;
+}
+
+
+/*成功案例*/
+
+
+/*新闻资讯*/
+
+.indexNew {
+  background: url(../../assets/images/index5.jpg) no-repeat center center;
+  padding: 60px 0 27px 0;
+}
+
+.indexNew a.more {
+  display: block;
+  padding: 5px 0px;
+  font-size: 16px;
+  color: #fff;
+  background: #ba0901;
+  margin: 0 auto;
+  width: 150px;
+  text-align: center
+}
+
+.indexNew ul.indexnews {
+  width: 1238px;
+  height:356px;
+  overflow: hidden;
+}
+
+ul.indexnews li {
+  float: left;
+  margin-right: 33px;
+  margin-bottom: 33px;
+  width: 584px;
+  height: 146px;
+  background: #fff;
+  border: 1px solid #fff;
+  padding: 18px 0;
+  position: relative;
+}
+
+ul.indexnews li code {
+  opacity: 0;
+  width: 41px;
+  height: 40px;
+  background: url(../../assets/images/cur.png) no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+ul.indexnews li .time {
+  float: left;
+  width: 98px;
+  height: 106px;
+  border-right: 1px solid #b5b5b5;
+  text-align: center;
+  margin-right: 15px;
+}
+
+ul.indexnews li .time span.date {
+  display: block;
+  font-size: 37px;
+  color: #427cbf;
+  margin-top: 22px;
+}
+
+ul.indexnews li .time span.year {
+  display: block;
+  font-size: 16px;
+  color: #427cbf;
+}
+
+ul.indexnews li .txt {
+  margin-top: 5px;
+  float: left;
+  width: 440px;
+  height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ul.indexnews li .txt a {
+  display: block;
+  font-size: 16px;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+ul.indexnews li .txt p {
+  font-size: 14px;
+  color: #474747;
+  line-height: 22px;
+  height: 66px;
+  overflow: hidden;
+  word-break:break-all;
+}
+
+ul.indexnews li:hover {
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  border: 1px solid #ba0901;
+}
+
+ul.indexnews li:hover code {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+ul.indexnews li:hover .time {
+  border-right: 1px solid #3074c1
+}
+
+ul.indexnews li:hover .txt a {
+  color: #3074c1;
+}
+
+
+/*新闻资讯*/
+
+.indexAbout {
+  margin: 60px 0;
+}
+
+.indexAbout .lt {
+  width: 695px;
+  overflow: hidden;
+}
+
+.indexAbout .rt img {
+  width: 465px;
+  height: 270px;
+  overflow: hidden;
+}
+
+.indexAbout .lt h1 {
+  font-size: 23px;
+  color: #363636;
+  line-height: 35px;
+  font-weight: normal;
+  position: relative;
+  padding: 12px;
+  width: 484px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.indexAbout .lt i {
+  position: absolute;
+  background: url(../../assets/images/cur2.png) no-repeat;
+  width: 45px;
+  height: 42px;
+}
+
+.indexAbout .lt i.lef {
+  left: 0;
+  top: 0
+}
+
+.indexAbout .lt i.ref {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(540deg);
+  -moz-transform: rotate(540deg);
+  transform: rotate(540deg)
+}
+
+.indexAbout dl.intro {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  height: 102px;
+  overflow: hidden;
+}
+
+.indexAbout dl.intro dt {
+  float: left;
+  font-size: 16px;
+  color: #ba0901;
+}
+
+.indexAbout dl.intro dd {
+  font-size: 16px;
+  color: #363636;
+  width: 608px;
+  display: block;
+  float: left;
+  line-height: 24px;
+  height: 44px;
+  overflow: hidden;
+}
+
+.indexAbout .inbot {
+  margin-top: 4px;
+  float: left;
+  width: 450px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.indexAbout a.more {
+  display: block;
+  float: left;
+  font-size: 14px;
+  padding: 5px 16px;
+  background: #ba0901;
+  color: #fff;
+}

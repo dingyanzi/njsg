@@ -1,0 +1,39 @@
+<nz-spin [nzSpinning]="_isSpinning">
+  <div *ngIf ="ifs=='0'" class="bannerBg_news"></div>
+  <div *ngIf ="ifs=='1'" class="bannerBg_case"></div>
+  <div class="mainBox topmain">
+    <div class="crumbs">
+      <div class="crum">
+        <span>{{titles}}</span>
+        <div class="right">
+          <nz-breadcrumb [nzSeparator]="'>'">
+            当前位置：
+            <nz-breadcrumb-item>
+              <a *ngIf ="ifs=='0'" routerLink="/layout/news">新闻资讯</a>
+              <a *ngIf ="ifs=='1'" routerLink="/layout/case">成功案例</a>
+            </nz-breadcrumb-item>
+            <nz-breadcrumb-item>
+              <a href="">{{newsDetail['title']}} {{caseDetail['title']}}</a>
+            </nz-breadcrumb-item>
+          </nz-breadcrumb>
+
+        </div>
+      </div>
+      <p>News <span>information</span></p>
+    </div>
+    <div class="showBox">
+      <div class="tipBox">
+        <h4>{{newsDetail['title']}} {{caseDetail['title']}}</h4>
+        <span *ngIf ="ifs=='0'">发布时间：{{newsDetail.updatetime | date: 'yyyy-MM-dd'}}</span>
+        <span *ngIf ="ifs=='1'">发布时间：{{caseDetail.updatetime | date: 'yyyy-MM-dd'}}</span>
+      </div>
+      <div class="showtxt" [innerHtml]="newsDetail['content']"  [innerHtml]="caseDetail['content']" >
+      </div>
+    </div>
+   <!-- <div class="pages">
+      <p><span>上一篇：</span><a>惺惺惜惺惺</a></p>
+      <p><span>下一篇：</span><a>暂无文章</a></p>
+    </div>-->
+  </div>
+<nz-back-top></nz-back-top>
+</nz-spin>

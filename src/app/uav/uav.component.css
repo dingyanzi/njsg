@@ -1,0 +1,385 @@
+.bannerBox{
+  background: url(../../assets/images/ban6.jpg) no-repeat;
+  background-position:center center ;
+  background-size:cover;
+  min-height: 900px;
+}
+
+.bannerBox .mainBox img{
+  float: left;
+}
+.bannerBox .mainBox .nav{
+  float: right;
+}
+.nav .ant-anchor-link{
+  padding: 8px 18px 8px 18px;
+}
+
+.index{
+  float: left;
+  position: relative;
+  z-index: 99;
+  top: 44px;
+  left: 54px;
+}
+.index a{
+  color: #fff;
+}
+.nav{
+  width: 100%;
+  position: relative;
+}
+.nav .bg{
+  width: 99999999999px;
+  height: 110px;
+  background: url(../../assets/images/cur16.png) repeat;
+  position: absolute;
+  left: -193px;
+  top: 0;
+  z-index: 88;
+}
+.nav img{
+  position: relative;
+  top:20px;
+  z-index: 99;
+  float: left;
+}
+.nav a{
+  font-size: 14px;
+}
+.nav a:hover{
+  color: #108ee9;
+}
+.aboutBox{
+  margin-top: 50px;
+}
+.title{
+  background: url(../../assets/images/cur8.png) no-repeat;
+  height: 70px;
+  width: 844px;
+  margin: 0 auto;
+}
+.t2{
+  background-position:0 -105px;
+}
+.t3{
+  background-position:0 -205px;
+}
+.t4{
+  background-position:0 -305px;
+}
+ul.aboutList{
+  width: 1220px;
+  margin-top: 30px;
+}
+ul.aboutList li{
+  float: left;
+  margin-right: 20px;
+  width: 386px;
+  height: 506px;
+}
+ul.aboutList li .tipBox{
+  width: 386px;
+  height: 147px;
+  background: #f2f2f2;
+  padding: 38px 40px 25px 40px;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+ul.aboutList li .tipBox p,ul.aboutList li .tipBox code{
+  display: block;
+  color: #313131;
+  font-size: 28px;
+}
+ul.aboutList li .tipBox code{
+  font-size: 20px;
+}
+ul.aboutList li .tipBox span{
+  display: inline-block;
+  margin-top: 20px;
+  width: 64px;
+  height: 4px;
+  background: #aaaaaa;
+}
+ul.aboutList li .imgBox{
+  position: relative;
+  width: 386px;
+  height: 360px;
+  overflow: hidden;
+  background-position:center center;
+  background-size: cover;
+  z-index: -1;
+}
+ul.aboutList li.ab1 .imgBox{
+  background: url(../../assets/images/ab1.png) no-repeat;
+}
+ul.aboutList li.ab2 .imgBox{
+  background: url(../../assets/images/ab2.png) no-repeat;
+}
+ul.aboutList li.ab3 .imgBox{
+  background: url(../../assets/images/ab3.png) no-repeat;
+}
+ul.aboutList li .imgBox .gray{
+  position: absolute;
+  bottom: -360px;
+  width: 100%;
+  height: 100%;
+  background:rgba(0, 0, 0, 0.5);
+  padding: 38px;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+ul.aboutList li .imgBox .gray p{
+  font-size: 16px;
+  color: #fff;
+  line-height: 28px;
+  display: block;
+  height: 276px;
+  overflow: hidden;
+}
+ul.aboutList li:hover .tipBox{
+  background: #c52724;
+}
+ul.aboutList li:hover .tipBox p,ul.aboutList li:hover .tipBox code{
+  color: #fff;
+}
+ul.aboutList li:hover .tipBox span{
+  background: #fff;
+}
+ul.aboutList li:hover .imgBox .gray{
+  bottom: 0;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+}
+.statusBox{
+  margin-top: 50px;
+}
+.statusBox .titxt{
+  margin-top: 10px;
+  font-size: 16px;
+  color: #5e5e5e;
+  text-align: center;
+}
+.statusImg{
+  background: url(../../assets/images/about.jpg) no-repeat left top;
+  width: 974px;
+  height: 392px;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  position: relative;
+  z-index:-1;
+}
+.statusImg div{
+  position: absolute;
+}
+.statusImg div p{
+  float: left;
+  font-size: 16px;
+  color: #373737;
+  display: block;
+  width: 480px;
+  height: 44px;
+  padding-top: 10px;
+}
+.statusImg div i{
+  display: inline-block;
+  width: 39px;
+  height: 38px;
+  float: left;
+  background: url(../../assets/images/cur9.png) no-repeat;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+.statusImg div.st1 p{
+  padding-top: 0px;
+}
+.statusImg .st1{
+  top:21px;
+  right:45px;
+}
+.statusImg .st2{
+  top:86px;
+  right: 4px;
+}
+.statusImg .st3{
+  top:168px;
+  right: -13px;
+}
+.statusImg .st4{
+  top:246px;
+  right: 0;
+}
+.statusImg .st5{
+  bottom: 21px;
+  right: 45px;
+}
+.productBox .topBan{
+  background: url(../../assets/images/probg.jpg) no-repeat;
+  padding: 85px 0;
+  margin-bottom: 50px;
+}
+.productBox p{
+  font-size: 18px;
+  color: #333;
+  line-height: 34px;
+}
+.productBox .bgJi{
+  margin-top:100px ;
+  background: url("../../assets/images/pro.jpg") no-repeat;
+  background-position: center center;
+  background-size:cover;
+  height: 604px;
+}
+.businessBox{
+  padding-top: 95px;
+  background: url(../../assets/images/busbg.jpg) no-repeat;
+  height: 350px;
+}
+.businessBox p{
+  text-align: center;
+  font-size: 18px;
+  margin: 30px 0;
+  color: #fff;
+}
+.gao{
+  background: url(../../assets/images/gao.jpg) no-repeat;
+  height: 159px;
+  background-position: center center;
+  background-size:cover ;
+}
+.business .busbg{
+  background: url(../../assets/images/wubg.jpg) no-repeat;
+  width: 566px;
+  height: 552px;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+}
+.business .mainBox{
+  padding: 80px 0;
+  padding-bottom: 150px;
+}
+.business .busbg div{
+  width: 280px;
+  position: absolute;
+}
+.business .busbg div p{
+  display: block;
+  width: 280px;
+  height: 110px;
+  font-size: 16px;
+  line-height: 23px;
+  overflow: hidden;
+}
+.business .busbg div span{
+  font-size: 20px;
+  color: #4a4a4a;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+.business .busbg div span i{
+  width: 28px;
+  height: 28px;
+  float: left;
+  display: inline-block;
+  background: url(../../assets/images/cur10.png) no-repeat;
+  background-position: 0 6px;
+  margin-right: 5px;
+}
+.business .busbg .bus1 span:hover i{
+  background-position: -36px 6px;
+}
+.business .busbg .bus2 span i{
+  background-position: 0 -21px;
+}
+.business .busbg .bus2 span:hover i{
+  background-position: -36px -21px;
+}
+.business .busbg .bus3 span i{
+  background-position: 0 -50px;
+}
+.business .busbg .bus3 span:hover i{
+  background-position: -36px -50px;
+}
+.business .busbg .bus4 span i{
+  background-position: 0 -77px;
+}
+.business .busbg .bus4 span:hover i{
+  background-position: -36px -77px;
+}
+.business .busbg .bus5 span i{
+  background-position: 0px -109px;
+}
+.business .busbg .bus5 span:hover i{
+  background-position: -36px -109px;
+}
+.business .busbg div span:hover{
+  color: #3f96d9;
+}
+.business .busbg .bus1{
+  top:79px;
+  left: -284px;
+}
+.business .busbg .bus2{
+  top:78px;
+  right: -287px;
+}
+.business .busbg .bus3{
+  top:395px;
+  left: -284px;
+}
+.business .busbg .bus4{
+  top:395px;
+  right: -285px;
+}
+.business .busbg .bus5{
+  top:554px;
+  left: 188px;
+}
+.busbg .dsbg{
+  position: absolute;
+  top:145px;
+  left:116px;
+}
+.rotation{
+  position: absolute;
+  top:45px;
+  left: 75px;
+  -webkit-transform:translate3d(0,0,0);
+  -moz-transform:translate3d(0,0,0);
+  transform:translate3d(0,0,0);
+  /*-webkit-animation:play 10s linear infinite;*/
+  -moz-animation:play 60s linear infinite;
+  animation:play 60s linear infinite;
+}
+@-webkit-keyframes play{
+  0%  {
+    -webkit-transform:rotate(0deg);
+  }
+  100% {
+    -webkit-transform:rotate(360deg);
+  }
+}
+@-moz-keyframes play{
+  0%  {
+    -moz-transform:rotate(0deg);
+  }
+  100% {
+    -moz-transform:rotate(360deg);
+  }
+}
+@keyframes play{
+  0%  {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
+}
